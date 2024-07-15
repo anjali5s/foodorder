@@ -1,0 +1,292 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+/* Dashboard css-------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+
+}
+
+/* Body Styles */
+body {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100%;
+    padding: 0 2rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #751618 ;
+    
+}
+.sidebar img {
+  width:70px;
+  height:60px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: 80px;
+  margin-left: 30px;
+
+}
+/* .sidebar:hover {
+    width: 270px;
+} */
+
+
+/* Main Styles------------------------------------------------------------------------ */
+.main {
+    height: 100%; 
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.main li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.main li:hover,
+.dashboard {
+    background:#9a3334;
+   
+}
+
+.main a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main a span {
+    overflow: hidden;
+}
+
+.main a i {
+    font-size: 18px;
+}
+
+/* Main Content Styles */
+.main_content {
+    position: relative;
+    background: #fff;
+    width: calc(100% - 130px); /* Adjusted width based on sidebar width */
+    padding: 20px;
+}
+
+/* Header Styles ---------------------------------------------------------------------------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(159, 56, 56) ;
+    border-radius: 15px;
+    padding: 6px 2rem;
+    margin-bottom: 1rem;
+    height: 12vh;
+    border: 4px solid #751618;
+    border-radius: 20px;
+}
+
+.header_title {
+    color:#f2f2f2;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+}
+
+/* Table Styles --------------------------------------------------------------------------------------*/
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.table th,.table  td {
+    border: 1px solid #0e0d0d;
+    padding: 5px;
+    text-align: left;
+   
+}
+
+.table th {
+    background-color:#9a3334;
+    color: #fff;
+}
+
+
+.table  tbody tr {
+    background-color:#fff;
+   
+}
+
+
+.btn-info,.btn-danger {
+    padding: 5px 10px;
+    text-decoration: none;
+    /* color: rgb(133, 60, 60); */
+    cursor: pointer;
+   
+}
+
+.btn-info {
+    background-color: #17a2b8;
+  
+}
+
+.btn-danger {
+    background-color: #68d94f;
+} 
+
+/* product css------------------------ -------------------------------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+    font-size: 15px;
+}
+
+/* .nav-pills {
+    list-style-type: none;
+    padding: 0;
+    background-color: #ebe416;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.nav-pills li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-pills li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+.nav-pills li a:hover {
+    background-color: #0056b3;
+} */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #bd2727;
+    color: white;
+}
+
+.btn-success {
+    background-color: #215719;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #b43737;
+    color: white;
+} 
+/* --------------categorycss --- ----------------------------------------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.col-md-6, .col-md-12 {
+    flex: 1;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+} 
+
+
+   

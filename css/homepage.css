@@ -1,0 +1,848 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+/* ---------------------------start header ----------------------------------------------------------------------*/
+header {
+  height: 12vh;
+  width: 100%;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  background-color: #9a3334;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  z-index: 1000; /* to ensure it's above other elements */
+}
+header .logo {
+  align-items: center;
+  display: flex;
+  padding: 40px;
+}
+header .logo h2 {
+  font-size: 30px;
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul li {
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  margin: 5px;
+}
+/* end header section */
+
+/*------------------------------------- ----------- login page form-------------------------------------------------------------------------------*/
+.log-in {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-box {
+  text-align: center;
+  color: white;
+}
+
+.centered-box .box {
+  padding: 20px;
+  /* backdrop-filter: blur(5px); */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Semi-transparent black background for the login box */
+  border-radius: 5px;
+  height: auto;
+}
+
+.form-box {
+  margin-bottom: 10px;
+}
+
+.forgot-password {
+  margin-bottom: 10px;
+  /* color: white; */
+}
+.forgot-password a {
+  color: #875cff;
+}
+.forgot-password a:hover {
+  color: #ff66d7;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.login-button {
+  width: 100%;
+  background: linear-gradient(45deg, #875cff, #ff66d7);
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.login-button:active {
+  transform: scale(0.95);
+}
+
+.register-link {
+  margin-top: 10px;
+}
+.register-link a {
+  color: #875cff;
+}
+.register-link a:hover {
+  color: #ff66d7;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* =-----------------------------------------------register----------------------------------------------------- */
+.register {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.reg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-box {
+  text-align: center;
+  color: white;
+}
+
+.reg-box {
+  padding: 20px;
+  /* backdrop-filter: blur(5px); */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Semi-transparent black background for the login box */
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+button[type="submit"] {
+  width: 100%;
+  font-size: 20px;
+  margin: 5px 0px;
+  outline: none;
+  /* color:white; */
+  /* border-width: 0px 0px 2px 0px;
+  border-color: #432443; */
+}
+
+.reg-box button[type="submit"] {
+  width: 100%;
+  background: linear-gradient(45deg, #875cff, #ff66d7);
+  border: none;
+  padding: 10px 12px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.reg-box button:active {
+  transform: scale3d(0.9, 0.9, 0.9);
+}
+
+.reg-box .bottom-link {
+  font-size: 18px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.reg-box .bottom-link a {
+  color: #632cb0;
+  text-decoration: none;
+}
+
+.reg-box .bottom-link a:hover {
+  color: #ff66d7;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* end of login and regs */
+/* ------------------------index page---------------------------------- */
+
+.main {
+  position: relative;
+  margin-top: -10px;
+}
+
+.main img {
+  /* padding-top: 70px; */
+  /* margin: 15px 0 10px 0; */
+  margin-bottom: 20px;
+  width: 100%;
+  height: 400px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-overlay h3 {
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.show-more {
+  width: 90px;
+  height: 30px;
+  border: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin-top: 10px;
+}
+
+.show-more a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none; /* to remove underline from the link */
+}
+/* ----------------------------------------------categories-------------------------------------------------------- */
+.category {
+  text-align: center;
+  padding: 20px;
+  height: 400px;
+  width: 100%;
+}
+
+.category-container {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-container .image1 {
+  /* border: 3px solid black; */
+  margin: 20px;
+  text-align: center;
+
+  /* width: 100px;
+  height: 70px;  */
+}
+
+.image1 .image {
+  height: 350px;
+  width: 270px;
+  object-fit: cover;
+  /* margin-left: 10px; */
+
+  /* width: 100%;
+    height: auto; */
+}
+
+.image1 h3 {
+  font-size: 35px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #7a0909;
+}
+/*--------------------------------------------------main->products-----------------------------------------------*/
+.product h2 {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 30px;
+}
+
+/* Product Container */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Product Box */
+.box {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.box img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+.box h3 {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+.box .qty {
+  width: 60px;
+  margin-left: 10px;
+}
+
+.box .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.box .cat {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #333;
+  color: #0d0c0c;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Icons */
+.box .fas {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.product-cart-box {
+  background-color: #751618;
+  height: 32px;
+  width: 100px;
+  font-weight: 700;
+}
+.product-cart-box  {
+  color: white;
+}
+.product .button :hover {
+  background-color: #751618;
+}
+
+/* Empty Message */
+.empty {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* More Button */
+.more-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.more-btn .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.more-btn .btn:hover {
+  background-color: #555;
+}
+
+/* end main */
+
+/* ---------------------------------------------------about page--------------------------------------------------------- */
+
+.box1 {
+  background-color: white;
+  /* padding: 5px; */
+  height: 525px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.content {
+  width: 65%;
+  float: left;
+  height: 535px;
+  background-color: white;
+}
+.about {
+  width: 250px;
+  height: 70px;
+  background-color: white;
+}
+.about h1 {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  /* padding: 20px; */
+}
+.paragraph {
+  width: 100%;
+  background-color: white;
+  height: 200px;
+  margin: 35px;
+}
+.paragraph p {
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: black;
+  /* margin: 5px 10px 15px 5px; */
+  line-height: 1.5;
+}
+.mission {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  margin: 10px 0 10px 0;
+}
+.mission h2 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  margin: 0 0 5px 0;
+}
+.mission p {
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: black;
+  margin: 5px 10px 15px 5px;
+  line-height: 1.5;
+}
+.status {
+  width: 100%;
+  height: 85px;
+  background-color: white;
+  margin: 10px 0 10px 0;
+  justify-content: center;
+}
+.status h1 {
+  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  margin: 0 0 5px 0;
+  text-align: center;
+  /* padding: 30px; */
+}
+.imaage {
+  height: 530px;
+  background-color: white;
+}
+
+.img_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.img_container img {
+  width: 200px;
+  /* height: 300px; */
+  transition: all 0.25s;
+}
+.img_container img:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px black, 10px 10px gray;
+}
+/* ----------------------------------------------end about------------------------------------------------------- */
+/* ---------------------------------------footer---------------------------------- */
+
+footer {
+  background-color: #751618;
+  padding-top: 50px;
+  margin: 20px 0 10px 0;
+}
+.footer-container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.footer-content {
+  width: 33.3%;
+}
+h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #fff;
+}
+.footer-content p {
+  width: 190px;
+  margin: auto;
+  padding: 7px;
+  margin-top: 5px;
+  color: #ecebeb;
+}
+.footer-content ul {
+  text-align: center;
+}
+.list {
+  padding: 0;
+}
+.list li {
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 10px;
+  position: relative;
+  margin-top: 5px;
+}
+.list li a {
+  color: #fff;
+}
+.list li a:hover {
+  color: orange;
+}
+.social-icons {
+  text-align: center;
+  padding: 0;
+}
+.social-icons li {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.social-icons i {
+  color: white;
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(252, 249, 244);
+}
+.social-icons i:hover {
+  color: orange;
+}
+/* ----------------------------------------------END footer------------------------------------------------------- */
+
+/* ----------------------------------------Start MENU------------------------------------------------------- */
+
+.menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu h1 {
+  text-align: center;
+}
+
+.menu .section {
+  margin-bottom: 20px;
+  display: flex;
+}
+.menu .section h3 {
+  text-align: center;
+}
+.menu ul li a {
+  color: black;
+  display: flex;
+}
+
+/* Styles for menu items */
+.menu .item {
+  align-items: center;
+  width: 30%; /* Adjust width for columns */
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu .item img {
+  width: 100%;
+  height: 150px; /* Adjust image height as needed */
+  object-fit: cover; /* Stretch image to fill container */
+}
+
+.menu .item h4 {
+  margin-top: 5px;
+  font-weight: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu .item p {
+  margin-bottom: 5px;
+}
+
+/* --------------------add to cart section-------------------------- */
+.product-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-item img {
+  width: 150px; /* Adjust image width as needed */
+  height: auto;
+  margin-right: 20px;
+}
+
+.product-info {
+  flex: 1; /* Allow product info to fill remaining space */
+}
+
+.product-info h4 {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.product-info p {
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+}
+
+.add-to-cart button {
+  background-color: rgb(114, 6, 6); /* Green color */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.add-to-cart button:hover {
+  background-color: blue; /* Darker green on hover */
+}
+
+.add-to-cart .quantity {
+  width: 40px;
+  padding: 5px;
+  border: 1px solid #170101;
+  margin-left: 10px;
+  text-align: center;
+}
+
+/* ---------------------------------Checkout------------------------------------- */
+
+.checkout {
+  max-width: 800px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.checkout table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.checkout table td {
+  padding: 10px;
+}
+
+.checkout table label {
+  font-weight: bold;
+}
+
+.checkout input[type="text"],
+.checkout input[type="email"],
+.checkout textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkout textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.checkout .btn {
+  display: inline-block;
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout .btn:hover {
+  background-color: #4cae4c;
+}
+/* -----------------------Search bar----------------------------------- */
+/* Search Form */
+.search-form {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.search-form form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-form form .box {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1; /* Make input field take most of the space */
+  font-size: 16px;
+}
+
+.search-form form button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  margin-left: 10px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .search-form form {
+    flex-wrap: wrap; /* Wrap elements on smaller screens */
+  }
+  .search-form form .box {
+    width: 100%; /* Make input field take full width */
+  }
+  .search-form form button {
+    margin-top: 10px; /* Add space between input and button */
+  }
+}
+
+
+
+.proceed-btn{
+  padding: auto;
+  background-color: green;
+  color: white;
+}
